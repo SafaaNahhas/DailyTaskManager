@@ -83,22 +83,33 @@ If you want to work always and not just once, use the following command:
 php artisan schedule:work
 
 #### Task Index Page
+
 ![Task Admin Index](public/images/Admin.PNG)
+
 ![Tas kUser Index](public/images/User.PNG)
 
 #### Create Task Page
+
 ![Create Task](public/images/CreateSuccess.PNG)
+
 ![Store Validate](public/images/StoreValidate.PNG)
 
 #### Edit Task Page
+
 ![Edit Task](public/images/UpdateSuccess.PNG)
+
 ![Edit Validate](public/images/EditValidate.PNG)
 
 #### Delete Task 
+
 ![Delete Task](public/images/DeleteSuccess.PNG)
+
 ![ForceDelete Task](public/images/ForceDelete.PNG.PNG)
+
 ![Restore Task](public/images/Restore.PNG)
+
 ![Trached Task](public/images/Trached.PNG)
 
 #### MailTrap Email
-![Mailtrap Email](MailtrapEmail.PNG)
+
+![Mailtrap Email](public/images/MailtrapEmail.PNG)
