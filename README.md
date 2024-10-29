@@ -69,10 +69,7 @@ protected function schedule(Schedule $schedule)
     $schedule->command('app:send-pending-tasks-email')->daily();
 }
 
-5. Setting Up Cron Job on Server
-A Cron Job is configured on the server to trigger Laravel's scheduler every minute, allowing it to run all scheduled tasks at the correct times. This step ensures the email-sending command operates daily and reaches each user on schedule.
-
-6. Testing the Command
+5. Testing the Command
 To confirm functionality, the command can be run manually. Successful testing ensures that emails are delivered as expected and that all automated components are in place.
 
 php artisan app:send-pending-tasks-email
@@ -109,6 +106,7 @@ php artisan schedule:work
 ![Restore Task](public/images/Restore.PNG)
 
 ![Trached Task](public/images/Trached.PNG)
+
 
 #### MailTrap Email
 
