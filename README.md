@@ -35,12 +35,19 @@ Configure the email server in the .env file. This setup provides the foundation 
 in file .env:
 
 MAIL_MAILER=smtp
+
 MAIL_HOST=smtp.mailtrap.io
+
 MAIL_PORT=2525
+
 MAIL_USERNAME=your_mailtrap_username
+
 MAIL_PASSWORD=your_mailtrap_password
+
 MAIL_ENCRYPTION=tls
+
 MAIL_FROM_ADDRESS=example@example.com
+
 MAIL_FROM_NAME="Task Manager"
 
 
