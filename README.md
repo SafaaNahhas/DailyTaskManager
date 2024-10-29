@@ -21,7 +21,7 @@ This is a simple daily task management system built using Laravel, Blade, and Cr
 1. Clone the repository:
 
    git clone https://github.com/SafaaNahhas/DailyTaskManager.git
-   cd daily-task-manager
+  
 
 
 ## Scheduled Task: Sending Daily Pending Task Emails
