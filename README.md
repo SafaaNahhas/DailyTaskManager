@@ -118,3 +118,4 @@ php artisan schedule:work
 #### MailTrap Email
 
 ![Mailtrap Email](public/images/MailtrapEmail.PNG)
+![Mailtrap Email](public/images/MailTrap.PNG)

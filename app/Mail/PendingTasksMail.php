@@ -25,18 +25,48 @@ class PendingTasksMail extends Mailable
         $this->tasks = $tasks;
 
     }
+
+      /**
+     * Define the envelope for the email.
+     */
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            subject: 'Your Pending Tasks for Today',
+        );
+    }
+
+    /**
+     * Define the content for the email.
+     */
+    public function content(): Content
+    {
+        return new Content(
+            view: 'emails.pendingtasks',
+            with: [
+                'tasks' => $this->tasks,
+            ],
+        );
+    }
+
+    /**
+     * Define any attachments for the email.
+     */
+    public function attachments(): array
+    {
+        return [];
+    }
     /**
      * Build the email message for pending tasks.
      *
      * @return $this
      */
-    public function build()
-    {
-        return $this->subject('Your Pending Tasks for Today')
-                    ->view('emails.pendingtasks')
-                    ->with([
-                        'tasks' => $this->tasks,
-                    ]);
-    }
-
+    // public function build()
+    // {
+    //     return $this->subject('Your Pending Tasks for Today')
+    //                 ->view('emails.pendingtasks')
+    //                 ->with([
+    //                     'tasks' => $this->tasks,
+    //                 ]);
+    // }
 }
